@@ -1,0 +1,105 @@
+Day 1 – Advanced Types
+
+Topics:
+
+Intersection types (&)
+Literal types ("success" | "error")
+Union types refresher
+Type guards (typeof, instanceof)
+keyof and typeof operators
+Conditional types (T extends U ? X : Y)
+
+Practice:
+
+Create a union type for status = "success" | "error" | "loading"
+Write a function that accepts a string | number and returns a string describing the type
+Use keyof to get keys of an interface { name: string; age: number }
+Day 2 – Classes & OOP
+
+Topics:
+
+Class syntax, constructors
+public, private, protected
+Readonly and static properties
+Getters and setters
+Inheritance
+Abstract classes
+
+Practice:
+
+Create a Person class with name and age, add a greet() method
+Extend Person into Employee with salary
+Create an abstract class Shape with area() method, implement in Circle and Rectangle
+Day 3 – Generics
+
+Topics:
+
+Generic functions
+Generic interfaces and types
+Constraints (T extends U)
+Generic utility patterns
+
+Practice:
+
+Write a generic identity<T>(arg: T): T function
+Create a generic Stack<T> class with push and pop
+Constrain a generic function to accept only objects with a name property
+Day 4 – Utility Types & Advanced Patterns
+
+Topics:
+
+Partial<T>, Required<T>
+Pick<T, K> and Omit<T, K>
+Record<K, T>
+Nested objects & optional chaining
+
+Practice:
+
+Create a User interface, then use Partial<User> to update only some properties
+Use Pick<User, "name"> to create a type with only name
+Create a Record<string, number> for product stock counts
+
+Day 5 – Modules & External JS Libraries
+
+Topics:
+
+export / import syntax
+Default vs named exports
+Using @types packages
+Declaring modules for untyped JS
+
+Practice:
+
+Split a project into 2 files and import/export functions
+Install @types/lodash and type a lodash function
+Create a .d.ts file for a small untyped JS module
+Day 6 – Advanced Function Types
+
+Topics:
+
+Function overloads
+this in TS functions
+Callback typing
+Optional function properties in interfaces
+
+Practice:
+
+Write a function with 2 overloads: (x: number, y: number) and (x: string, y: string)
+Define an interface with a method that optionally accepts a callback function
+Use this type in a class method
+Day 7 – Real-World TypeScript & Mini Project
+
+Topics:
+
+API data typing
+TS with arrays of nested objects
+Practical patterns for React/Node (optional)
+TS config tuning (tsconfig.json)
+
+Practice / Mini Project Idea:
+
+Build a Todo App in TypeScript:
+Todo interface with id, text, completed
+Class or functions to add/remove/update todos
+Generic functions for filtering by completed
+Optional chaining for safe property access
